@@ -1,8 +1,25 @@
-[devices]
 
-[devices.0]
-name = "Device-name"
-ip = "Device-IP"
-mailTo = "Your-email-address"
-path = "/path/to/folder"
-cronjobFrequency = "* * * * *"
+[email]
+courier_token = ""
+email_address = ""
+log_level = "ERROR"
+
+[storage]
+type = "s3"
+bucket = ""
+access_key = ""
+secret_key = ""
+
+[logging]
+log_level = "INFO"
+log_file = ""
+
+
+[backup.sourceDevice]
+type = "scp"
+host = ""
+user = ""
+password = ""
+remote_dir = ""
+cron_schedule = "* * * * *"
+
