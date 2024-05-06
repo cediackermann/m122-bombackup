@@ -31,7 +31,6 @@ def main(key: str):
         f"{key}_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}_{id_generator()}"
     )
     backup_location = f"{gettempdir()}/{backup_name}"
-    os.makedirs(backup_location, exist_ok=True)
 
     # Transfer files
     if device["type"] == "scp":
@@ -51,7 +50,6 @@ def main(key: str):
                     raise ValueError("Could not get transport")
 
                 with SCPClient(transport) as scp:
-                    # TODO: Add support for excluding hidden files
                     scp.get(
                         device["remote_dir"],
                         local_path=backup_location,
@@ -84,10 +82,6 @@ def main(key: str):
         logger.error(f"Failed to upload backup to S3: {e}")
         send_email("Backup failed", f"Failed to upload backup to S3: {e}", config["email"]["email_address"])
         return
-    
-    # Delete temporary files
-    shutil.rmtree(backup_location)
-
 
     logger.info(f"Backup {backup_name} completed successfully")
 

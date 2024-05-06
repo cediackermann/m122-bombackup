@@ -1,25 +1,24 @@
-
 [email]
 courier_token = ""
-email_address = ""
+email_address = "ackermanncedi@gmail.com"
 log_level = "ERROR"
 
 [storage]
 type = "s3"
-bucket = ""
+bucket = "bombucket2"
 access_key = ""
 secret_key = ""
 
 [logging]
 log_level = "INFO"
-log_file = ""
+log_file = "/Users/cediackermann/Library/CloudStorage/OneDrive-NoserYoungAG/Cedicuments/TBZ/M122/m122-bombackup/bombackup.log"
 
 
 [backup.sourceDevice]
 type = "scp"
-host = ""
-user = ""
-password = ""
-remote_dir = ""
-cron_schedule = "* * * * *"
+host = "192.168.178.64"
+user = "cediackermann"
+password = "1234"
+remote_dir = "/home/cediackermann"
+cron_schedule = "*/2 * * * *"
 
