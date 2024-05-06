@@ -1,0 +1,77 @@
+INFO:config:Reading config key: backup
+INFO:__main__:Removing existing bombackup cron jobs
+INFO:utils:Probing device 10.37.129.4
+INFO:utils:Device 10.37.129.4 is reachable
+INFO:__main__:Creating bombackup cron job for sourceDevice
+INFO:__main__:Writing crontab
+INFO:config:Reading config key: backup
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.4p1)
+INFO:paramiko.transport:Authentication (publickey) failed.
+INFO:paramiko.transport:Authentication (publickey) failed.
+INFO:paramiko.transport:Authentication (password) successful!
+ERROR:__main__:Failed to transfer files: scp: /home/cediackermann/Documents: No such file or directory
+INFO:config:Reading config key: email
+INFO:utils:Sending email to ackermanncedi@gmail.com
+INFO:config:Reading config key: email.courier_token
+INFO:config:Reading config key: email.email_address
+INFO:httpx:HTTP Request: POST https://api.courier.com/send "HTTP/1.1 202 Accepted"
+INFO:config:Reading config key: backup
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.4p1)
+INFO:config:Reading config key: backup
+INFO:__main__:Removing existing bombackup cron jobs
+INFO:utils:Probing device 10.37.129.4
+INFO:utils:Device 10.37.129.4 is reachable
+INFO:__main__:Creating bombackup cron job for sourceDevice
+INFO:__main__:Writing crontab
+INFO:paramiko.transport:Authentication (publickey) failed.
+INFO:paramiko.transport:Authentication (publickey) failed.
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:config:Reading config key: storage
+INFO:config:Reading config key: storage
+INFO:config:Reading config key: storage
+INFO:__main__:Backup sourceDevice_2024-05-06_08-24-00_zflo318b completed successfully
+INFO:config:Reading config key: backup
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.4p1)
+INFO:paramiko.transport:Authentication (publickey) failed.
+INFO:paramiko.transport:Authentication (publickey) failed.
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:config:Reading config key: storage
+INFO:config:Reading config key: storage
+INFO:config:Reading config key: storage
+INFO:__main__:Backup sourceDevice_2024-05-06_08-25-01_wgnbjkqn completed successfully
+INFO:config:Reading config key: backup
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.4p1)
+INFO:paramiko.transport:Authentication (publickey) failed.
+INFO:paramiko.transport:Authentication (publickey) failed.
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:config:Reading config key: storage
+INFO:config:Reading config key: storage
+INFO:config:Reading config key: storage
+INFO:__main__:Backup sourceDevice_2024-05-06_08-26-01_xkt8welr completed successfully
+INFO:config:Reading config key: backup
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.4p1)
+INFO:paramiko.transport:Authentication (publickey) failed.
+INFO:paramiko.transport:Authentication (publickey) failed.
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:config:Reading config key: storage
+INFO:config:Reading config key: storage
+INFO:config:Reading config key: storage
+INFO:__main__:Backup sourceDevice_2024-05-06_08-27-01_lzlieut2 completed successfully
+INFO:config:Reading config key: backup
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.4p1)
+INFO:paramiko.transport:Authentication (publickey) failed.
+INFO:paramiko.transport:Authentication (publickey) failed.
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:config:Reading config key: storage
+INFO:config:Reading config key: storage
+INFO:config:Reading config key: storage
+INFO:__main__:Backup sourceDevice_2024-05-06_08-28-01_q1494hyo completed successfully
+INFO:config:Reading config key: backup
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.4p1)
+INFO:paramiko.transport:Authentication (publickey) failed.
+INFO:paramiko.transport:Authentication (publickey) failed.
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:config:Reading config key: storage
+INFO:config:Reading config key: storage
+INFO:config:Reading config key: storage
+INFO:__main__:Backup sourceDevice_2024-05-06_08-29-18_ezpblqq1 completed successfully

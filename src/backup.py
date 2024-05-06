@@ -17,6 +17,16 @@ logger = logging.getLogger(__name__)
 
 
 def main(key: str):
+    """Backup a device
+
+    Args:
+        key (str): which device to backup
+
+    Raises:
+        ValueError: Device not found in configuration
+        ValueError: Backup type not supported
+        ValueError: Could not get transport
+    """
     config = Config()
     setup_logging(config)
 

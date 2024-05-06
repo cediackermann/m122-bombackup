@@ -10,6 +10,11 @@ class Config:
     config_file = "config.toml"
 
     def __init__(self, config_file=None):
+        """Initialize the Config class
+
+        Raises:
+            FileNotFoundError: If the config file is not found
+        """
         self.config_file = config_file or self.config_file
 
         script_path = Path(__file__).parent.resolve()
@@ -22,6 +27,11 @@ class Config:
             raise FileNotFoundError(f"Config file not found: {self.config_file}")
 
     def __getitem__(self, key):
+        """Get a config value by key
+
+        Returns:
+            str: The value of the key
+        """
         logger.info(f"Reading config key: {key}")
         parts = key.split(".")
         with open(self.config_file) as f:
@@ -29,10 +39,3 @@ class Config:
             for part in parts:
                 config = config[part]
             return config
-
-    def __setitem__(self, key, value):
-        logger.info(f"Setting config key: {key} to value: {value}")
-        with open(self.config_file, "r+") as f:
-            config = toml.load(f)
-            config[key] = value
-            toml.dump(config, f)

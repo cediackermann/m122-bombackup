@@ -9,6 +9,8 @@ logger = logging.getLogger(__name__)
 
 
 def update_cron():
+    """Update the cron jobs for the backup devices
+    """
     config = Config()
     backup = config["backup"]
     crontab = CronTab(user=True)  
@@ -32,6 +34,8 @@ def update_cron():
 
 
 def main():
+    """Main entry point for the script
+    """
     config = Config()
     setup_logging(config)
 
